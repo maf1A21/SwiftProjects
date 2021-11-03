@@ -1,14 +1,14 @@
-// Two groups of stones
+// Two groups of stones (difference is not more than 2 times)
 
 import Foundation
 
 
-func MakeTwoGroups(givenArr: inout [Int], arr1: inout [Int], arr2: inout [Int]) -> Bool
+func MakeTwoGroups(givenArr: inout [Double], arr1: inout [Double], arr2: inout [Double]) -> Bool
 {
     givenArr.sort()
     givenArr.reverse()
-    var sum1 = 0
-    var sum2 = 0
+    var sum1 = 0.0
+    var sum2 = 0.0
     for i in givenArr
     {
         if (sum1 <= sum2)
@@ -26,9 +26,9 @@ func MakeTwoGroups(givenArr: inout [Int], arr1: inout [Int], arr2: inout [Int]) 
 }
 
 let n = 10
-var givenArrOfStones = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-var firstArrOfStones: [Int] = []
-var secondtArrOfStones: [Int] = []
+var givenArrOfStones: [Double] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var firstArrOfStones: [Double] = []
+var secondtArrOfStones: [Double] = []
 
 if (MakeTwoGroups(givenArr: &givenArrOfStones, arr1: &firstArrOfStones, arr2: &secondtArrOfStones))
 {
@@ -39,3 +39,4 @@ else
 {
     print("Can't sort them")
 }
+
