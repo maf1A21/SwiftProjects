@@ -36,7 +36,7 @@ func MakeTwoGroups(givenArr: inout [Double], arr1: inout [Double], arr2: inout [
     return sum1 <= sum2 * 1.5 && sum2 <= sum1 * 1.5
 }
 
-let n = 10
+let n = 4
 var givenArrOfStones: [Double] = [1, 1, 1, 0.5]
 var firstArrOfStones: [Double] = []
 var secondtArrOfStones: [Double] = []
