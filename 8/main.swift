@@ -47,7 +47,7 @@ func PrintSubsets (_ n: Int)
     for i in 1..<numberOfSubsets
     {
         var subset: [Int] = []
-        let binary_i = BinaryCount(i, n) // 0, 0, 1
+        let binary_i = BinaryCount(i, n) 
         for j in 0..<n
         {
             if binary_i[j] == 1
